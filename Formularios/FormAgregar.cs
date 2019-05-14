@@ -16,5 +16,10 @@ namespace ApInv.Formularios
         {
             InitializeComponent();
         }
+
+        private void FormAgregar_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

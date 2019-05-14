@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApInv.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace ApInv
         public Form_Inicio()
         {
             InitializeComponent();
+        }
+
+        private void Button_Agregar_Click(object sender, EventArgs e)
+        {
+            //vincular o abrir formulario agregar
+            Form fmagregar = new FormAgregar();
+            fmagregar.Show();
+                                
+
+        }
+
+        private void Form_Inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

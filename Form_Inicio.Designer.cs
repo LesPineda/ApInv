@@ -68,25 +68,25 @@
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.consultaToolStripMenuItem.Text = "Consulta";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // label_Titulo
@@ -133,6 +133,7 @@
             this.button_Agregar.TabIndex = 5;
             this.button_Agregar.Text = "Agregar";
             this.button_Agregar.UseVisualStyleBackColor = true;
+            this.button_Agregar.Click += new System.EventHandler(this.Button_Agregar_Click);
             // 
             // button_Modificar
             // 
@@ -167,7 +168,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form_Inicio";
-            this.Text = "Form_Inicio";
+            this.Text = "Control de Inventario";
+            this.Load += new System.EventHandler(this.Form_Inicio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
