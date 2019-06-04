@@ -143,6 +143,7 @@
             this.button_Modificar.TabIndex = 6;
             this.button_Modificar.Text = "Modificar";
             this.button_Modificar.UseVisualStyleBackColor = true;
+            this.button_Modificar.Click += new System.EventHandler(this.Button_Modificar_Click);
             // 
             // button_Consulta
             // 
@@ -152,6 +153,7 @@
             this.button_Consulta.TabIndex = 7;
             this.button_Consulta.Text = "Consulta";
             this.button_Consulta.UseVisualStyleBackColor = true;
+            this.button_Consulta.Click += new System.EventHandler(this.Button_Consulta_Click);
             // 
             // Form_Inicio
             // 

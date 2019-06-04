@@ -31,5 +31,17 @@ namespace ApInv
         {
 
         }
+
+        private void Button_Modificar_Click(object sender, EventArgs e)
+        {
+            Form fmmodificar = new FromModificar();
+            fmmodificar.Show();
+        }
+
+        private void Button_Consulta_Click(object sender, EventArgs e)
+        {
+            Form fmconsulta = new FormConsulta();
+            fmconsulta.Show();
+        }
     }
 }

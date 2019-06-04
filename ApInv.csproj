@@ -52,6 +52,18 @@
     <Compile Include="Formularios\FormAgregar.Designer.cs">
       <DependentUpon>FormAgregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormConsulta.Designer.cs">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FromModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FromModificar.Designer.cs">
+      <DependentUpon>FromModificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FormAgregar.resx">
       <DependentUpon>FormAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FromModificar.resx">
+      <DependentUpon>FromModificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Inicio.resx">
       <DependentUpon>Form_Inicio.cs</DependentUpon>
