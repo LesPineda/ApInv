@@ -75,6 +75,9 @@
     <EmbeddedResource Include="Formularios\FormAgregar.resx">
       <DependentUpon>FormAgregar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormConsulta.resx">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FromModificar.resx">
       <DependentUpon>FromModificar.cs</DependentUpon>
     </EmbeddedResource>
