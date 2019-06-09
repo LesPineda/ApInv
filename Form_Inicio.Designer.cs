@@ -38,10 +38,18 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.PanelTitulo = new System.Windows.Forms.Panel();
             this.PanelControl = new System.Windows.Forms.Panel();
+            this.BtnRestaurar = new System.Windows.Forms.PictureBox();
+            this.BtnMinimizar = new System.Windows.Forms.PictureBox();
+            this.BtnMaximizar = new System.Windows.Forms.PictureBox();
+            this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.BtnMenu = new System.Windows.Forms.PictureBox();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.MenuVertical.SuspendLayout();
             this.PanelTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
@@ -125,6 +133,10 @@
             // PanelTitulo
             // 
             this.PanelTitulo.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PanelTitulo.Controls.Add(this.BtnRestaurar);
+            this.PanelTitulo.Controls.Add(this.BtnMinimizar);
+            this.PanelTitulo.Controls.Add(this.BtnMaximizar);
+            this.PanelTitulo.Controls.Add(this.BtnCerrar);
             this.PanelTitulo.Controls.Add(this.BtnMenu);
             this.PanelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitulo.Location = new System.Drawing.Point(250, 0);
@@ -140,8 +152,60 @@
             this.PanelControl.Size = new System.Drawing.Size(750, 550);
             this.PanelControl.TabIndex = 10;
             // 
+            // BtnRestaurar
+            // 
+            this.BtnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRestaurar.Image = global::ApInv.Properties.Resources.res;
+            this.BtnRestaurar.Location = new System.Drawing.Point(692, 7);
+            this.BtnRestaurar.Name = "BtnRestaurar";
+            this.BtnRestaurar.Size = new System.Drawing.Size(20, 20);
+            this.BtnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnRestaurar.TabIndex = 4;
+            this.BtnRestaurar.TabStop = false;
+            this.BtnRestaurar.Click += new System.EventHandler(this.BtnRestaurar_Click);
+            // 
+            // BtnMinimizar
+            // 
+            this.BtnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimizar.Image = global::ApInv.Properties.Resources.minimazar;
+            this.BtnMinimizar.Location = new System.Drawing.Point(661, 7);
+            this.BtnMinimizar.Name = "BtnMinimizar";
+            this.BtnMinimizar.Size = new System.Drawing.Size(20, 20);
+            this.BtnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMinimizar.TabIndex = 3;
+            this.BtnMinimizar.TabStop = false;
+            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
+            // 
+            // BtnMaximizar
+            // 
+            this.BtnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMaximizar.Image = global::ApInv.Properties.Resources.maxi;
+            this.BtnMaximizar.Location = new System.Drawing.Point(692, 7);
+            this.BtnMaximizar.Name = "BtnMaximizar";
+            this.BtnMaximizar.Size = new System.Drawing.Size(20, 20);
+            this.BtnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMaximizar.TabIndex = 2;
+            this.BtnMaximizar.TabStop = false;
+            this.BtnMaximizar.Click += new System.EventHandler(this.BtnMaximizar_Click);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrar.Image = global::ApInv.Properties.Resources.cerrar;
+            this.BtnCerrar.Location = new System.Drawing.Point(723, 7);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(20, 20);
+            this.BtnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnCerrar.TabIndex = 1;
+            this.BtnCerrar.TabStop = false;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // BtnMenu
             // 
+            this.BtnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMenu.Image = global::ApInv.Properties.Resources.Mobile_Menu_Icon;
             this.BtnMenu.Location = new System.Drawing.Point(6, 9);
             this.BtnMenu.Name = "BtnMenu";
@@ -182,6 +246,10 @@
             this.Load += new System.EventHandler(this.Form_Inicio_Load);
             this.MenuVertical.ResumeLayout(false);
             this.PanelTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
@@ -202,5 +270,9 @@
         private System.Windows.Forms.Panel PanelTitulo;
         private System.Windows.Forms.PictureBox BtnMenu;
         private System.Windows.Forms.Panel PanelControl;
+        private System.Windows.Forms.PictureBox BtnMinimizar;
+        private System.Windows.Forms.PictureBox BtnMaximizar;
+        private System.Windows.Forms.PictureBox BtnCerrar;
+        private System.Windows.Forms.PictureBox BtnRestaurar;
     }
 }
