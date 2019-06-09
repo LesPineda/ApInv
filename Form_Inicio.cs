@@ -45,5 +45,16 @@ namespace ApInv
             Form fmconsulta = new FormConsulta();
             fmconsulta.Show();
         }
+
+        //boton menu abrir y cerrar las opciones
+        private void BtnMenu_Click(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width == 250)
+            {
+                MenuVertical.Width = 75;
+            }
+            else
+                MenuVertical.Width = 250;
+        }
     }
 }

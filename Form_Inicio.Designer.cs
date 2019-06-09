@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label_Titulo = new System.Windows.Forms.Label();
             this.label_Agregar = new System.Windows.Forms.Label();
             this.label_Modificar = new System.Windows.Forms.Label();
@@ -41,58 +35,21 @@
             this.button_Agregar = new System.Windows.Forms.Button();
             this.button_Modificar = new System.Windows.Forms.Button();
             this.button_Consulta = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.MenuVertical = new System.Windows.Forms.Panel();
+            this.PanelTitulo = new System.Windows.Forms.Panel();
+            this.PanelControl = new System.Windows.Forms.Panel();
+            this.BtnMenu = new System.Windows.Forms.PictureBox();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.MenuVertical.SuspendLayout();
+            this.PanelTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opcionesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(533, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // opcionesToolStripMenuItem
-            // 
-            this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarToolStripMenuItem,
-            this.modificarToolStripMenuItem,
-            this.consultaToolStripMenuItem,
-            this.salirToolStripMenuItem});
-            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
-            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.opcionesToolStripMenuItem.Text = "Opciones";
-            // 
-            // agregarToolStripMenuItem
-            // 
-            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.agregarToolStripMenuItem.Text = "Agregar";
-            // 
-            // modificarToolStripMenuItem
-            // 
-            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.modificarToolStripMenuItem.Text = "Modificar";
-            // 
-            // consultaToolStripMenuItem
-            // 
-            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.consultaToolStripMenuItem.Text = "Consulta";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
             // 
             // label_Titulo
             // 
             this.label_Titulo.AutoSize = true;
-            this.label_Titulo.Location = new System.Drawing.Point(108, 41);
+            this.label_Titulo.Location = new System.Drawing.Point(447, 181);
             this.label_Titulo.Name = "label_Titulo";
             this.label_Titulo.Size = new System.Drawing.Size(237, 13);
             this.label_Titulo.TabIndex = 1;
@@ -101,7 +58,7 @@
             // label_Agregar
             // 
             this.label_Agregar.AutoSize = true;
-            this.label_Agregar.Location = new System.Drawing.Point(46, 72);
+            this.label_Agregar.Location = new System.Drawing.Point(385, 212);
             this.label_Agregar.Name = "label_Agregar";
             this.label_Agregar.Size = new System.Drawing.Size(72, 13);
             this.label_Agregar.TabIndex = 2;
@@ -110,7 +67,7 @@
             // label_Modificar
             // 
             this.label_Modificar.AutoSize = true;
-            this.label_Modificar.Location = new System.Drawing.Point(46, 105);
+            this.label_Modificar.Location = new System.Drawing.Point(385, 245);
             this.label_Modificar.Name = "label_Modificar";
             this.label_Modificar.Size = new System.Drawing.Size(78, 13);
             this.label_Modificar.TabIndex = 3;
@@ -119,7 +76,7 @@
             // label_Consulta
             // 
             this.label_Consulta.AutoSize = true;
-            this.label_Consulta.Location = new System.Drawing.Point(46, 138);
+            this.label_Consulta.Location = new System.Drawing.Point(385, 278);
             this.label_Consulta.Name = "label_Consulta";
             this.label_Consulta.Size = new System.Drawing.Size(76, 13);
             this.label_Consulta.TabIndex = 4;
@@ -127,7 +84,7 @@
             // 
             // button_Agregar
             // 
-            this.button_Agregar.Location = new System.Drawing.Point(169, 72);
+            this.button_Agregar.Location = new System.Drawing.Point(508, 212);
             this.button_Agregar.Name = "button_Agregar";
             this.button_Agregar.Size = new System.Drawing.Size(84, 20);
             this.button_Agregar.TabIndex = 5;
@@ -137,7 +94,7 @@
             // 
             // button_Modificar
             // 
-            this.button_Modificar.Location = new System.Drawing.Point(169, 105);
+            this.button_Modificar.Location = new System.Drawing.Point(508, 245);
             this.button_Modificar.Name = "button_Modificar";
             this.button_Modificar.Size = new System.Drawing.Size(84, 20);
             this.button_Modificar.TabIndex = 6;
@@ -147,7 +104,7 @@
             // 
             // button_Consulta
             // 
-            this.button_Consulta.Location = new System.Drawing.Point(169, 138);
+            this.button_Consulta.Location = new System.Drawing.Point(508, 278);
             this.button_Consulta.Name = "button_Consulta";
             this.button_Consulta.Size = new System.Drawing.Size(84, 20);
             this.button_Consulta.TabIndex = 7;
@@ -155,11 +112,60 @@
             this.button_Consulta.UseVisualStyleBackColor = true;
             this.button_Consulta.Click += new System.EventHandler(this.Button_Consulta_Click);
             // 
+            // MenuVertical
+            // 
+            this.MenuVertical.BackColor = System.Drawing.SystemColors.ControlText;
+            this.MenuVertical.Controls.Add(this.Logo);
+            this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MenuVertical.Location = new System.Drawing.Point(0, 0);
+            this.MenuVertical.Name = "MenuVertical";
+            this.MenuVertical.Size = new System.Drawing.Size(250, 600);
+            this.MenuVertical.TabIndex = 8;
+            // 
+            // PanelTitulo
+            // 
+            this.PanelTitulo.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PanelTitulo.Controls.Add(this.BtnMenu);
+            this.PanelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTitulo.Location = new System.Drawing.Point(250, 0);
+            this.PanelTitulo.Name = "PanelTitulo";
+            this.PanelTitulo.Size = new System.Drawing.Size(750, 50);
+            this.PanelTitulo.TabIndex = 9;
+            // 
+            // PanelControl
+            // 
+            this.PanelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelControl.Location = new System.Drawing.Point(250, 50);
+            this.PanelControl.Name = "PanelControl";
+            this.PanelControl.Size = new System.Drawing.Size(750, 550);
+            this.PanelControl.TabIndex = 10;
+            // 
+            // BtnMenu
+            // 
+            this.BtnMenu.Image = global::ApInv.Properties.Resources.Mobile_Menu_Icon;
+            this.BtnMenu.Location = new System.Drawing.Point(6, 9);
+            this.BtnMenu.Name = "BtnMenu";
+            this.BtnMenu.Size = new System.Drawing.Size(35, 35);
+            this.BtnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMenu.TabIndex = 0;
+            this.BtnMenu.TabStop = false;
+            this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
+            // 
+            // Logo
+            // 
+            this.Logo.Image = global::ApInv.Properties.Resources.IMO2;
+            this.Logo.Location = new System.Drawing.Point(12, 12);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(232, 50);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
+            // 
             // Form_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 269);
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.button_Consulta);
             this.Controls.Add(this.button_Modificar);
             this.Controls.Add(this.button_Agregar);
@@ -167,26 +173,23 @@
             this.Controls.Add(this.label_Modificar);
             this.Controls.Add(this.label_Agregar);
             this.Controls.Add(this.label_Titulo);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.PanelControl);
+            this.Controls.Add(this.PanelTitulo);
+            this.Controls.Add(this.MenuVertical);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Inicio";
             this.Text = "Control de Inventario";
             this.Load += new System.EventHandler(this.Form_Inicio_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuVertical.ResumeLayout(false);
+            this.PanelTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem opcionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Label label_Titulo;
         private System.Windows.Forms.Label label_Agregar;
         private System.Windows.Forms.Label label_Modificar;
@@ -194,5 +197,10 @@
         private System.Windows.Forms.Button button_Agregar;
         private System.Windows.Forms.Button button_Modificar;
         private System.Windows.Forms.Button button_Consulta;
+        private System.Windows.Forms.Panel MenuVertical;
+        private System.Windows.Forms.PictureBox Logo;
+        private System.Windows.Forms.Panel PanelTitulo;
+        private System.Windows.Forms.PictureBox BtnMenu;
+        private System.Windows.Forms.Panel PanelControl;
     }
 }
