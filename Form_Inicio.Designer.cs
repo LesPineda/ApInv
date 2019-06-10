@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.label_Titulo = new System.Windows.Forms.Label();
-            this.label_Agregar = new System.Windows.Forms.Label();
-            this.label_Modificar = new System.Windows.Forms.Label();
-            this.label_Consulta = new System.Windows.Forms.Label();
-            this.button_Agregar = new System.Windows.Forms.Button();
             this.button_Modificar = new System.Windows.Forms.Button();
             this.button_Consulta = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
@@ -43,6 +39,7 @@
             this.BtnMaximizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.BtnMenu = new System.Windows.Forms.PictureBox();
+            this.button_Agregar = new System.Windows.Forms.Button();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.MenuVertical.SuspendLayout();
             this.PanelTitulo.SuspendLayout();
@@ -57,54 +54,22 @@
             // label_Titulo
             // 
             this.label_Titulo.AutoSize = true;
-            this.label_Titulo.Location = new System.Drawing.Point(447, 181);
+            this.label_Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Titulo.Location = new System.Drawing.Point(133, 12);
             this.label_Titulo.Name = "label_Titulo";
-            this.label_Titulo.Size = new System.Drawing.Size(237, 13);
+            this.label_Titulo.Size = new System.Drawing.Size(348, 25);
             this.label_Titulo.TabIndex = 1;
-            this.label_Titulo.Text = "Administacion de Inventario y control de Cuentas";
-            // 
-            // label_Agregar
-            // 
-            this.label_Agregar.AutoSize = true;
-            this.label_Agregar.Location = new System.Drawing.Point(385, 212);
-            this.label_Agregar.Name = "label_Agregar";
-            this.label_Agregar.Size = new System.Drawing.Size(72, 13);
-            this.label_Agregar.TabIndex = 2;
-            this.label_Agregar.Text = "label_Agregar";
-            // 
-            // label_Modificar
-            // 
-            this.label_Modificar.AutoSize = true;
-            this.label_Modificar.Location = new System.Drawing.Point(385, 245);
-            this.label_Modificar.Name = "label_Modificar";
-            this.label_Modificar.Size = new System.Drawing.Size(78, 13);
-            this.label_Modificar.TabIndex = 3;
-            this.label_Modificar.Text = "label_Modificar";
-            // 
-            // label_Consulta
-            // 
-            this.label_Consulta.AutoSize = true;
-            this.label_Consulta.Location = new System.Drawing.Point(385, 278);
-            this.label_Consulta.Name = "label_Consulta";
-            this.label_Consulta.Size = new System.Drawing.Size(76, 13);
-            this.label_Consulta.TabIndex = 4;
-            this.label_Consulta.Text = "label_Consulta";
-            // 
-            // button_Agregar
-            // 
-            this.button_Agregar.Location = new System.Drawing.Point(508, 212);
-            this.button_Agregar.Name = "button_Agregar";
-            this.button_Agregar.Size = new System.Drawing.Size(84, 20);
-            this.button_Agregar.TabIndex = 5;
-            this.button_Agregar.Text = "Agregar";
-            this.button_Agregar.UseVisualStyleBackColor = true;
-            this.button_Agregar.Click += new System.EventHandler(this.Button_Agregar_Click);
+            this.label_Titulo.Text = "Administacion de Inventario y Software";
             // 
             // button_Modificar
             // 
-            this.button_Modificar.Location = new System.Drawing.Point(508, 245);
+            this.button_Modificar.FlatAppearance.BorderSize = 0;
+            this.button_Modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Modificar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button_Modificar.Location = new System.Drawing.Point(0, 152);
             this.button_Modificar.Name = "button_Modificar";
-            this.button_Modificar.Size = new System.Drawing.Size(84, 20);
+            this.button_Modificar.Size = new System.Drawing.Size(250, 40);
             this.button_Modificar.TabIndex = 6;
             this.button_Modificar.Text = "Modificar";
             this.button_Modificar.UseVisualStyleBackColor = true;
@@ -112,9 +77,13 @@
             // 
             // button_Consulta
             // 
-            this.button_Consulta.Location = new System.Drawing.Point(508, 278);
+            this.button_Consulta.FlatAppearance.BorderSize = 0;
+            this.button_Consulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Consulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Consulta.ForeColor = System.Drawing.Color.White;
+            this.button_Consulta.Location = new System.Drawing.Point(0, 198);
             this.button_Consulta.Name = "button_Consulta";
-            this.button_Consulta.Size = new System.Drawing.Size(84, 20);
+            this.button_Consulta.Size = new System.Drawing.Size(250, 40);
             this.button_Consulta.TabIndex = 7;
             this.button_Consulta.Text = "Consulta";
             this.button_Consulta.UseVisualStyleBackColor = true;
@@ -123,6 +92,9 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.SystemColors.ControlText;
+            this.MenuVertical.Controls.Add(this.button_Consulta);
+            this.MenuVertical.Controls.Add(this.button_Agregar);
+            this.MenuVertical.Controls.Add(this.button_Modificar);
             this.MenuVertical.Controls.Add(this.Logo);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
@@ -138,11 +110,13 @@
             this.PanelTitulo.Controls.Add(this.BtnMaximizar);
             this.PanelTitulo.Controls.Add(this.BtnCerrar);
             this.PanelTitulo.Controls.Add(this.BtnMenu);
+            this.PanelTitulo.Controls.Add(this.label_Titulo);
             this.PanelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitulo.Location = new System.Drawing.Point(250, 0);
             this.PanelTitulo.Name = "PanelTitulo";
             this.PanelTitulo.Size = new System.Drawing.Size(750, 50);
             this.PanelTitulo.TabIndex = 9;
+            this.PanelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitulo_MouseDown);
             // 
             // PanelControl
             // 
@@ -215,6 +189,22 @@
             this.BtnMenu.TabStop = false;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
+            // button_Agregar
+            // 
+            this.button_Agregar.FlatAppearance.BorderSize = 0;
+            this.button_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Agregar.ForeColor = System.Drawing.Color.White;
+            this.button_Agregar.Image = global::ApInv.Properties.Resources.producto;
+            this.button_Agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Agregar.Location = new System.Drawing.Point(0, 92);
+            this.button_Agregar.Name = "button_Agregar";
+            this.button_Agregar.Size = new System.Drawing.Size(250, 40);
+            this.button_Agregar.TabIndex = 5;
+            this.button_Agregar.Text = "Agregar";
+            this.button_Agregar.UseVisualStyleBackColor = true;
+            this.button_Agregar.Click += new System.EventHandler(this.Button_Agregar_Click);
+            // 
             // Logo
             // 
             this.Logo.Image = global::ApInv.Properties.Resources.IMO2;
@@ -230,13 +220,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.button_Consulta);
-            this.Controls.Add(this.button_Modificar);
-            this.Controls.Add(this.button_Agregar);
-            this.Controls.Add(this.label_Consulta);
-            this.Controls.Add(this.label_Modificar);
-            this.Controls.Add(this.label_Agregar);
-            this.Controls.Add(this.label_Titulo);
             this.Controls.Add(this.PanelControl);
             this.Controls.Add(this.PanelTitulo);
             this.Controls.Add(this.MenuVertical);
@@ -246,6 +229,7 @@
             this.Load += new System.EventHandler(this.Form_Inicio_Load);
             this.MenuVertical.ResumeLayout(false);
             this.PanelTitulo.ResumeLayout(false);
+            this.PanelTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).EndInit();
@@ -253,15 +237,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Label label_Titulo;
-        private System.Windows.Forms.Label label_Agregar;
-        private System.Windows.Forms.Label label_Modificar;
-        private System.Windows.Forms.Label label_Consulta;
         private System.Windows.Forms.Button button_Agregar;
         private System.Windows.Forms.Button button_Modificar;
         private System.Windows.Forms.Button button_Consulta;
