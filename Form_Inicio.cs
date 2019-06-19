@@ -41,6 +41,22 @@ namespace ApInv
         }
 
 
+        //funcion abrir ventana o formulario dentro del panel contenedor
+        private void AbrirFormPanelContenerdorModificar(object FormModificar)
+        {
+
+            if (this.PanelControl.Controls.Count > 0)
+                this.PanelControl.Controls.RemoveAt(0);
+            Form fh = FormModificar as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.PanelControl.Controls.Add(fh);
+            this.PanelControl.Tag = fh;
+            fh.Show();
+
+        }
+
+
         //vincular o abrir formulario agregar
         private void Button_Agregar_Click(object sender, EventArgs e)
         {
@@ -50,17 +66,21 @@ namespace ApInv
 
         }
 
+
+        private void Button_Modificar_Click(object sender, EventArgs e)
+        {
+
+            AbrirFormPanelContenerdor(new FromModificar());
+
+
+        }
+
         private void Form_Inicio_Load(object sender, EventArgs e)
         {
 
         }
-        //vincular o abrir formulario modificar
-        private void Button_Modificar_Click(object sender, EventArgs e)
-        {
-            
-            Form fmmodificar = new FromModificar();
-            fmmodificar.Show();
-        }
+
+        
         //vincular o abrir formulario consulta
         private void Button_Consulta_Click(object sender, EventArgs e)
         {
