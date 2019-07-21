@@ -32,23 +32,23 @@
             this.button_Modificar = new System.Windows.Forms.Button();
             this.button_Consulta = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.button_Agregar = new System.Windows.Forms.Button();
+            this.Logo = new System.Windows.Forms.PictureBox();
             this.PanelTitulo = new System.Windows.Forms.Panel();
-            this.PanelControl = new System.Windows.Forms.Panel();
             this.BtnRestaurar = new System.Windows.Forms.PictureBox();
             this.BtnMinimizar = new System.Windows.Forms.PictureBox();
             this.BtnMaximizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.BtnMenu = new System.Windows.Forms.PictureBox();
-            this.button_Agregar = new System.Windows.Forms.Button();
-            this.Logo = new System.Windows.Forms.PictureBox();
+            this.PanelControl = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.PanelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // label_Titulo
@@ -102,6 +102,32 @@
             this.MenuVertical.Size = new System.Drawing.Size(250, 600);
             this.MenuVertical.TabIndex = 8;
             // 
+            // button_Agregar
+            // 
+            this.button_Agregar.FlatAppearance.BorderSize = 0;
+            this.button_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Agregar.ForeColor = System.Drawing.Color.White;
+            this.button_Agregar.Image = global::ApInv.Properties.Resources.producto;
+            this.button_Agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_Agregar.Location = new System.Drawing.Point(0, 92);
+            this.button_Agregar.Name = "button_Agregar";
+            this.button_Agregar.Size = new System.Drawing.Size(250, 40);
+            this.button_Agregar.TabIndex = 5;
+            this.button_Agregar.Text = "Agregar";
+            this.button_Agregar.UseVisualStyleBackColor = true;
+            this.button_Agregar.Click += new System.EventHandler(this.Button_Agregar_Click);
+            // 
+            // Logo
+            // 
+            this.Logo.Image = global::ApInv.Properties.Resources.IMO2;
+            this.Logo.Location = new System.Drawing.Point(12, 12);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(232, 50);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 0;
+            this.Logo.TabStop = false;
+            // 
             // PanelTitulo
             // 
             this.PanelTitulo.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -116,15 +142,8 @@
             this.PanelTitulo.Name = "PanelTitulo";
             this.PanelTitulo.Size = new System.Drawing.Size(750, 50);
             this.PanelTitulo.TabIndex = 9;
+            this.PanelTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelTitulo_Paint);
             this.PanelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitulo_MouseDown);
-            // 
-            // PanelControl
-            // 
-            this.PanelControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelControl.Location = new System.Drawing.Point(250, 50);
-            this.PanelControl.Name = "PanelControl";
-            this.PanelControl.Size = new System.Drawing.Size(750, 550);
-            this.PanelControl.TabIndex = 10;
             // 
             // BtnRestaurar
             // 
@@ -189,31 +208,14 @@
             this.BtnMenu.TabStop = false;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
-            // button_Agregar
+            // PanelControl
             // 
-            this.button_Agregar.FlatAppearance.BorderSize = 0;
-            this.button_Agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Agregar.ForeColor = System.Drawing.Color.White;
-            this.button_Agregar.Image = global::ApInv.Properties.Resources.producto;
-            this.button_Agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Agregar.Location = new System.Drawing.Point(0, 92);
-            this.button_Agregar.Name = "button_Agregar";
-            this.button_Agregar.Size = new System.Drawing.Size(250, 40);
-            this.button_Agregar.TabIndex = 5;
-            this.button_Agregar.Text = "Agregar";
-            this.button_Agregar.UseVisualStyleBackColor = true;
-            this.button_Agregar.Click += new System.EventHandler(this.Button_Agregar_Click);
-            // 
-            // Logo
-            // 
-            this.Logo.Image = global::ApInv.Properties.Resources.IMO2;
-            this.Logo.Location = new System.Drawing.Point(12, 12);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(232, 50);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 0;
-            this.Logo.TabStop = false;
+            this.PanelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelControl.Location = new System.Drawing.Point(250, 50);
+            this.PanelControl.Name = "PanelControl";
+            this.PanelControl.Size = new System.Drawing.Size(750, 550);
+            this.PanelControl.TabIndex = 10;
+            this.PanelControl.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelControl_Paint);
             // 
             // Form_Inicio
             // 
@@ -228,6 +230,7 @@
             this.Text = "Control de Inventario";
             this.Load += new System.EventHandler(this.Form_Inicio_Load);
             this.MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.PanelTitulo.ResumeLayout(false);
             this.PanelTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnRestaurar)).EndInit();
@@ -235,7 +238,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
 
         }

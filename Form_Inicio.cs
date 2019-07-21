@@ -1,4 +1,5 @@
-﻿using ApInv.Formularios;
+﻿
+using ApInv.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,7 +67,7 @@ namespace ApInv
 
         }
 
-
+        //vincular o abrir formulario modificar
         private void Button_Modificar_Click(object sender, EventArgs e)
         {
 
@@ -131,6 +132,16 @@ namespace ApInv
         {
             RealeseCapture();
             SendMessage(this.Handle,0x112,0xf012,0);
+        }
+
+        private void PanelControl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PanelTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
